@@ -8,12 +8,40 @@
         <Variable name="WaRoleType" value="IISWebRole" />
       </Environment>
     </Task>
+    <Task commandLine="RemoteAccessAgent.exe" executionContext="elevated" taskType="background" relativePath="plugins\RemoteAccess">
+      <Environment>
+        <Variable name="RdModuleName" value="RemoteAccess" />
+        <Variable name="WaRoleType" value="IISWebRole" />
+      </Environment>
+    </Task>
+    <Task commandLine="RemoteAccessAgent.exe /blockStartup" executionContext="elevated" relativePath="plugins\RemoteAccess">
+      <Environment>
+        <Variable name="RdModuleName" value="RemoteAccess" />
+        <Variable name="WaRoleType" value="IISWebRole" />
+      </Environment>
+    </Task>
+    <Task commandLine="install.cmd" executionContext="elevated" relativePath="plugins\RemoteForwarder">
+      <Environment>
+        <Variable name="IsEmulated">
+          <RoleInstanceValue xpath="/RoleEnvironment/Deployment/@emulated" />
+        </Variable>
+        <Variable name="RdModuleName" value="RemoteForwarder" />
+        <Variable name="WaRoleType" value="IISWebRole" />
+      </Environment>
+    </Task>
   </Startup>
   <Runtime>
     <EntryPoint>
       <NetFxEntryPoint assemblyName="First_Role.dll" targetFrameworkVersion="v4.0" />
     </EntryPoint>
   </Runtime>
+  <ConfigurationSettings>
+    <Setting name="Enabled" nameSpace="Microsoft.WindowsAzure.Plugins.RemoteAccess" />
+    <Setting name="AccountUsername" nameSpace="Microsoft.WindowsAzure.Plugins.RemoteAccess" />
+    <Setting name="AccountEncryptedPassword" nameSpace="Microsoft.WindowsAzure.Plugins.RemoteAccess" />
+    <Setting name="AccountExpiration" nameSpace="Microsoft.WindowsAzure.Plugins.RemoteAccess" />
+    <Setting name="Enabled" nameSpace="Microsoft.WindowsAzure.Plugins.RemoteForwarder" />
+  </ConfigurationSettings>
   <Properties>
     <Property name="TargetFrameworkVersion" value="v4.5.2" />
     <Property name="RoleType" value="Web" />
@@ -24,14 +52,14 @@
     <Property name="SetConfiguration" value="Configuration=Debug" />
     <Property name="SetPlatform" value="Platform=AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5.2" />
-    <Property name="OutputDir" value="D:\Net\Azure\FirstDeployment\First_Cloud\obj\Debug\First_Role\" />
+    <Property name="OutputDir" value="D:\Net\Azure\TrialAzure\FirstDeployment\First_Cloud\obj\Debug\First_Role\" />
     <Property name="EntryPoint" value="First_Role.dll" />
-    <Property name="SourceDir" value="D:\Net\Azure\FirstDeployment\First_Role\" />
-    <Property name="SitePhysicalPath" value="D:\Net\Azure\FirstDeployment\First_Role\" />
+    <Property name="SourceDir" value="D:\Net\Azure\TrialAzure\FirstDeployment\First_Role\" />
+    <Property name="SitePhysicalPath" value="D:\Net\Azure\TrialAzure\FirstDeployment\First_Role\" />
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="D:\Net\Azure\FirstDeployment\First_Role\">
+    <Site name="Web" physicalDirectory="D:\Net\Azure\TrialAzure\FirstDeployment\First_Role\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>

@@ -23,9 +23,17 @@
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+      <Import moduleName="Diagnostics" />
+    </Imports>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="D:\Net\Azure\FirstDeployment\First_Cloud\rcf\Debug\First_RoleContent\" />
+        <SourceDirectory path="D:\Net\Azure\TrialAzure\FirstDeployment\First_Cloud\rcf\Debug\First_RoleContent\" />
+      </Content>
+      <Content destination=".\">
+        <SourceDirectory path="D:\Net\Azure\TrialAzure\FirstDeployment\First_Cloud\ecf\First_RoleContent\" />
       </Content>
     </Contents>
   </WebRole>
