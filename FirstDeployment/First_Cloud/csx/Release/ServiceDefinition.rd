@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="First_Cloud" generation="1" functional="0" release="0" Id="060415f5-32cb-410b-bbe0-3ce0a2fc8ed0" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="First_Cloud" generation="1" functional="0" release="0" Id="023c8b3a-07e3-4933-93ed-884dbf7e1e3c" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="First_CloudGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -117,7 +117,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="First_Role" generation="1" functional="0" release="0" software="D:\Net\Azure\FirstDeployment\First_Cloud\csx\Release\roles\First_Role" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="First_Role" generation="1" functional="0" release="0" software="D:\Net\Azure\TrialAzure\FirstDeployment\First_Cloud\csx\Release\roles\First_Role" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
               <inPort name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput" protocol="tcp" />
@@ -167,14 +167,14 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="4f1d1cde-c60a-490f-b535-631016055aa3" ref="Microsoft.RedDog.Contract\ServiceContract\First_CloudContract@ServiceDefinition">
+    <implementation Id="ae3039fd-f7c6-4f22-a4b6-93d8d94bf8a1" ref="Microsoft.RedDog.Contract\ServiceContract\First_CloudContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="943a96ad-7b3b-42a9-9f79-5d7f566de6ca" ref="Microsoft.RedDog.Contract\Interface\First_Role:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="4c738ebe-48c6-4966-b9d4-f136f1d1d3bc" ref="Microsoft.RedDog.Contract\Interface\First_Role:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/First_Cloud/First_CloudGroup/First_Role:Endpoint1" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="f21735af-f41b-4546-b238-e4f0f34b2b43" ref="Microsoft.RedDog.Contract\Interface\First_Role:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput@ServiceDefinition">
+        <interfaceReference Id="9e930dd8-3d1f-488c-b5da-e05e61848690" ref="Microsoft.RedDog.Contract\Interface\First_Role:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/First_Cloud/First_CloudGroup/First_Role:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput" />
           </inPort>

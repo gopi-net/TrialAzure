@@ -45,14 +45,14 @@
     <Property name="SetConfiguration" value="Configuration=Release" />
     <Property name="SetPlatform" value="Platform=AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5.2" />
-    <Property name="OutputDir" value="D:\Net\Azure\FirstDeployment\First_Cloud\obj\Release\First_Role\" />
+    <Property name="OutputDir" value="D:\Net\Azure\TrialAzure\FirstDeployment\First_Cloud\obj\Release\First_Role\" />
     <Property name="EntryPoint" value="First_Role.dll" />
-    <Property name="SourceDir" value="D:\Net\Azure\FirstDeployment\First_Role\" />
-    <Property name="SitePhysicalPath" value="D:\Net\Azure\FirstDeployment\First_Cloud\obj\Release\First_Role\" />
+    <Property name="SourceDir" value="D:\Net\Azure\TrialAzure\FirstDeployment\First_Role\" />
+    <Property name="SitePhysicalPath" value="D:\Net\Azure\TrialAzure\FirstDeployment\First_Cloud\obj\Release\First_Role\" />
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="D:\Net\Azure\FirstDeployment\First_Cloud\obj\Release\First_Role\">
+    <Site name="Web" physicalDirectory="D:\Net\Azure\TrialAzure\FirstDeployment\First_Cloud\obj\Release\First_Role\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>

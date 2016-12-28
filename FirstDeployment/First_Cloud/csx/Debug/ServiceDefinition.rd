@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="First_Cloud" generation="1" functional="0" release="0" Id="a0b99aea-0add-4d08-b735-af4a5dc5b0f0" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="First_Cloud" generation="1" functional="0" release="0" Id="c17d164a-c1e8-4c21-8686-47b4dd0001b7" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="First_CloudGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -167,14 +167,14 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="1330e95b-f9e4-4fc0-bbc5-93215482ffe2" ref="Microsoft.RedDog.Contract\ServiceContract\First_CloudContract@ServiceDefinition">
+    <implementation Id="b1961d80-097f-47c8-8918-02df3f7d900e" ref="Microsoft.RedDog.Contract\ServiceContract\First_CloudContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="8def6e49-aba2-4ac3-b914-0f88c3be960a" ref="Microsoft.RedDog.Contract\Interface\First_Role:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="9dcf99f3-5daa-426b-a2bf-1a5bd67d0312" ref="Microsoft.RedDog.Contract\Interface\First_Role:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/First_Cloud/First_CloudGroup/First_Role:Endpoint1" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="74beb817-1aa7-425c-a531-4faaac11157a" ref="Microsoft.RedDog.Contract\Interface\First_Role:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput@ServiceDefinition">
+        <interfaceReference Id="850aa656-da48-47a4-809b-91e3b322abed" ref="Microsoft.RedDog.Contract\Interface\First_Role:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/First_Cloud/First_CloudGroup/First_Role:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput" />
           </inPort>

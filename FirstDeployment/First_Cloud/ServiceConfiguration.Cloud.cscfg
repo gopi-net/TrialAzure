@@ -6,12 +6,12 @@
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="gopiazure" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEBhknwBK9HW9RhlLUrq+egQwDQYJKoZIhvcNAQEBBQAEggEAZUjuknLlc7kmeoSzeyqAwcprdAcZJQ6uGkvyId7MdFrBZLJuPVs5jSOmBVmco5tsivx6YSw7sXCpeULdJ7gFvYsYnOcHEg7j5TJQDMuNtQrWYzlQlR7RvC0sD3ofa/LY4Dozi7hm9MzzrJ4WxWEbrjzC+yHtIf7ngruI/jcuqiUB4HeNVoqCcflnL5dcPs+eXZ3fwRP4XnWtq5jyA7tV3OiyPkIIbjXRhZWdXGyuLE/ZS/Jl7jsMS7ksQn6mcNpdgonXESPeKO883tNgoYqe059XcnS/tBBsJxAQMYNku2aIixuS0RwYPlEoaibiwplkUy7PIraoPOZRg54ACGVmQDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECK4UO+APIVJ+gBBGgkoFz7ckc+HQ9eoM4i1t" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEBZ1tJ2cIKGzSy2FGnvp7jgwDQYJKoZIhvcNAQEBBQAEggEAROcHA4pPfgwWhka+w4dSQLjfcjQOLHlkTWCT54r388Dx2OS/RRjC8+iQZfh7GrN6WOBoiaY8WMWGRLscgGUQWqxS1m6++TFmN9DtX3v26mIlAgCz8MJ0ZyCYeXFFYI+/dssEs4McvZNqueg/TIkkDywmf/pOD5DwtvXRuYYQ1PRKAWiXrNxn1qwUASqXWquo/xqlbk7EARiLnLIEYnTJC1OgEdZ5GKgY0ecSHqrdj9myBx/dG/vaP3gcMpXKKbxBxJ7vpw6i+EkErUXhl/qGOIaP3wAZx0fWKzv8YwRMen9fa+llZvXFyWWYKY6+sV0W2uoU2vDNMzrLXZPewzeCPzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECPXreb4XPVIOgBCQ2bQmGs0hT+4RFPVk2BjD" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2018-01-18T23:59:59.0000000+05:30" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
     </ConfigurationSettings>
     <Certificates>
-      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="B4E5EEDBB8C9D09703701E5158A649D34310DCC1" thumbprintAlgorithm="sha1" />
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="A98D963596C601E6418B0EBA6740DF83452025C0" thumbprintAlgorithm="sha1" />
     </Certificates>
   </Role>
 </ServiceConfiguration>

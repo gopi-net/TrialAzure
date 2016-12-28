@@ -29,7 +29,7 @@
     </Imports>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="D:\Net\Azure\FirstDeployment\First_Cloud\rcf\Release\First_RoleContent\" />
+        <SourceDirectory path="D:\Net\Azure\TrialAzure\FirstDeployment\First_Cloud\rcf\Release\First_RoleContent\" />
       </Content>
     </Contents>
   </WebRole>
